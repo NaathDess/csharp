@@ -23,3 +23,14 @@ public class Pessoa {
           }
 }
 
+public class Estudante : Pessoa{
+    private String curso:
+
+    public Estudante(string nome, int idade, string cpf, string curso): base(nome, idade, cpf){
+        Curso = curso;
+    }
+    public string Curso{
+         get { return curso;}
+         set { curso = value;}
+    }
+}
