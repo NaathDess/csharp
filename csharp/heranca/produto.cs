@@ -31,7 +31,7 @@ public string Categoria {
 public class ConsoleGame : Produto{
     private int armazenamento:
 
-public ConsoleGame(string nome, decimal preco, string descricao, string categoria, int armazenamento){
+public ConsoleGame(string nome, decimal preco, string descricao, string categoria, int armazenamento) : base(nome, preco, descricao, categoria){
     Armazenamento = armazenamento:
 }
 public string Armazenamento {
@@ -43,7 +43,7 @@ public string Armazenamento {
 public class Jogo : Produto{
     private string genero:
 
-public Jogo(string nome, decimal preco, string descricao, string categoria, string genero){
+public Jogo(string nome, decimal preco, string descricao, string categoria, string genero) : base(nome, preco, descricao, categoria){
     Genero = genero:
 }
 public string Genero {
@@ -52,10 +52,10 @@ public string Genero {
  }
 }
 
-public class Tipo : Produto{
+public class Acessorio : Produto{
     private string tipo:
 
-public Tipo(string nome, decimal preco, string descricao, string categoria, string tipo){
+public Acessorio(string nome, decimal preco, string descricao, string categoria, string tipo) : base(nome, preco, descricao, categoria){
    Tipo = tipo:
 }
 public string Tipo {
@@ -66,7 +66,7 @@ public string Tipo {
 public class Colecionavel : Produto{
     private bool edicaoLimitada:
 
-public Colecionavel(string nome, decimal preco, string descricao, string categoria, bool edicaoLimitada){
+public Colecionavel(string nome, decimal preco, string descricao, string categoria, bool edicaoLimitada) : base(nome, preco, descricao, categoria){
    EdicaoLimitada = edicaolimitada:
 }
 public string EdicaoLimitada{
@@ -79,8 +79,9 @@ public class Program {
     public static void main (string[] args) {
         ConsoleGame consoleGame = new ConsoleGame ("PlayStation 4", 3.099 , "Console de Vídeo Game PlayStation 4","Console","1 Tera");
         Jogo jogo = new Jogo ("God of War Ragnarök", 199, "Jogo completo  God of War Ragnarök para Playstation 4", "jogo PS4", "roguelite");
-        Tipo tipo = new Tipo ("JBL bluetooth Fone", 226, "Fone via Bluetooth JBL da cor azul", "Tipo", "Tipo: Fone");
+Produto produto;
+produto = new Acessorio ("JBL bluetooth Fone", 226, "Fone via Bluetooth JBL da cor azul", "Acessório", "Tipo: Fone");
         Colecionavel colecionavel = new Colecionavel ("Figure do Zoro", 130, "Boneco do Zoro, um dos principais personagens de One Piece",
-        " Colecionável", "True");
+        " Colecionável", true);
     }
 }
