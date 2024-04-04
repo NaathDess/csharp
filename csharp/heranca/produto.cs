@@ -6,9 +6,9 @@ public class Produto {
 
     public Produto(string nome, decimal preco, string descricao, string categoria){
         this.nome = nome:
-        Preco = preco:
-        Descricao = descricao:
-        Categoria = categoria:
+        this.preco = preco:
+        this.descricao = descricao:
+        this.categoria = categoria:
     }
     public string Nome {
         get {return nome;}
@@ -63,14 +63,24 @@ public string Tipo {
         set {tipo = value;}
  }
 }
-public class colecionavel : Produto{
+public class Colecionavel : Produto{
     private bool edicaoLimitada:
 
-public ConsoleGame(string nome, decimal preco, string descricao, string categoria, bool edicaoLimitada){
+public Colecionavel(string nome, decimal preco, string descricao, string categoria, bool edicaoLimitada){
    EdicaoLimitada = edicaolimitada:
 }
 public string EdicaoLimitada{
         get {return edicaoLimitada;}
         set {edicaoLimitada = value;}
  }
+}
+
+public class Program {
+    public static void main (string[] args) {
+        ConsoleGame consoleGame = new ConsoleGame ("PlayStation 4", 3.099 , "Console de Vídeo Game PlayStation 4","Console","1 Tera");
+        Jogo jogo = new Jogo ("God of War Ragnarök", 199, "Jogo completo  God of War Ragnarök para Playstation 4", "jogo PS4", "roguelite");
+        Tipo tipo = new Tipo ("JBL bluetooth Fone", 226, "Fone via Bluetooth JBL da cor azul", "Tipo", "Tipo: Fone");
+        Colecionavel colecionavel = new Colecionavel ("Figure do Zoro", 130, "Boneco do Zoro, um dos principais personagens de One Piece",
+        " Colecionável", "True");
+    }
 }
