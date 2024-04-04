@@ -1,11 +1,11 @@
 public class Produto {
     private string nome:
-    private int preco:
+    private decimal preco:
     private string descricao:
     private string categoria:
 
-    public Produto(string nome, int preco, string descricao, string categoria){
-        Nome = nome:
+    public Produto(string nome, decimal preco, string descricao, string categoria){
+        this.nome = nome:
         Preco = preco:
         Descricao = descricao:
         Categoria = categoria:
@@ -14,7 +14,7 @@ public class Produto {
         get {return nome;}
         set {nome = value;}
     }
-    public int Preco {
+    public decimal Preco {
         get {return preco;}
         set {preco = value;}
 }
@@ -31,7 +31,7 @@ public string Categoria {
 public class ConsoleGame : Produto{
     private int armazenamento:
 
-public ConsoleGame(string nome, int preco, string descricao, string categoria, int armazenamento){
+public ConsoleGame(string nome, decimal preco, string descricao, string categoria, int armazenamento){
     Armazenamento = armazenamento:
 }
 public string Armazenamento {
@@ -41,9 +41,9 @@ public string Armazenamento {
 }
 
 public class Jogo : Produto{
-    private string Genero:
+    private string genero:
 
-public Jogo(string nome, int preco, string descricao, string categoria, string genero){
+public Jogo(string nome, decimal preco, string descricao, string categoria, string genero){
     Genero = genero:
 }
 public string Genero {
@@ -52,25 +52,25 @@ public string Genero {
  }
 }
 
-public class Acessorio : Produto{
-    private string acessorio:
+public class Tipo : Produto{
+    private string tipo:
 
-public Acessorio(string nome, int preco, string descricao, string categoria, string acessorio){
-   acessorio = acessorio:
+public Tipo(string nome, decimal preco, string descricao, string categoria, string tipo){
+   Tipo = tipo:
 }
-public string Acessorio {
-        get {return acessorio;}
-        set {acessorio = value;}
+public string Tipo {
+        get {return tipo;}
+        set {tipo = value;}
  }
 }
 public class colecionavel : Produto{
-    private bool edicaolimitada:
+    private bool edicaoLimitada:
 
-public ConsoleGame(string nome, int preco, string descricao, string categoria, bool edicaolimitada){
+public ConsoleGame(string nome, decimal preco, string descricao, string categoria, bool edicaoLimitada){
    EdicaoLimitada = edicaolimitada:
 }
 public string EdicaoLimitada{
-        get {return edicaolimitada;}
-        set {edicaolimitada = value;}
+        get {return edicaoLimitada;}
+        set {edicaoLimitada = value;}
  }
 }
