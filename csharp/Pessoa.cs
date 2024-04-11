@@ -1,9 +1,9 @@
 public class Pessoa {
-    private String nome:
+    private string nome:
       private int idade:
          private String cpf:
 
-         public Pessoa(string nome. int idade. string cpf){
+         public Pessoa(string nome, int idade, string cpf){
             Nome = nome:
             Idade = idade:
             CPF = cpf:
@@ -24,7 +24,7 @@ public class Pessoa {
 }
 
 public class Estudante : Pessoa{
-    private String curso:
+    private string curso:
 
     public Estudante(string nome, int idade, string cpf, string curso): base(nome, idade, cpf){
         Curso = curso;

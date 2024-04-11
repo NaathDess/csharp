@@ -78,9 +78,12 @@ public string EdicaoLimitada{
 public class Program {
     public static void main (string[] args) {
         ConsoleGame consoleGame = new ConsoleGame ("PlayStation 4", 3.099 , "Console de Vídeo Game PlayStation 4","Console","1 Tera");
+
         Jogo jogo = new Jogo ("God of War Ragnarök", 199, "Jogo completo  God of War Ragnarök para Playstation 4", "jogo PS4", "roguelite");
-Produto produto;
-produto = new Acessorio ("JBL bluetooth Fone", 226, "Fone via Bluetooth JBL da cor azul", "Acessório", "Tipo: Fone");
+
+        Produto produto;
+        produto = new Acessorio ("JBL bluetooth Fone", 226, "Fone via Bluetooth JBL da cor azul", "Acessório", "Tipo: Fone");
+        
         Colecionavel colecionavel = new Colecionavel ("Figure do Zoro", 130, "Boneco do Zoro, um dos principais personagens de One Piece",
         " Colecionável", true);
     }
